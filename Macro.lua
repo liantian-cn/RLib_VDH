@@ -32,4 +32,4 @@ macro[20] = { ["title"] = "13号饰品", ["macrotext"] = "/use 13" }
 macro[21] = { ["title"] = "14号饰品", ["macrotext"] = "/use 14" }
 macro[22] = { ["title"] = "恶魔变形", ["macrotext"] = "/cast 恶魔变形" }
 macro[23] = { ["title"] = "灵魂切削", ["macrotext"] = "/cast 灵魂切削" }
-macro[12] = { ["title"] = "瓦解mouseover", ["macrotext"] = "/cast [@mouseover] 瓦解" }
+macro[24] = { ["title"] = "瓦解鼠标", ["macrotext"] = "/cast [@mouseover] 瓦解" }

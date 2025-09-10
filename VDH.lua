@@ -119,19 +119,10 @@ function Rotation.Main()
         return Action:Cast("恶魔尖刺")
     end
 
-    -- 瓦解
     if Spell("瓦解"):CooldownUp() then
-        if Target:InRange(183752) and Target:ShouldInterrupt() then
-            return Action:Cast("瓦解target")
-        elseif Focus:InRange(183752) and Focus:ShouldInterrupt() then
-            return Action:Cast("瓦解focus")
+        if MouseOver:Exists() and MouseOver:CanInterrupt() and MouseOver:AffectingCombat() and MouseOver:InRange(5) and MouseOver:CanAttack(Player) then
+            return Action:Cast("瓦解鼠标");
         end
-    end
-
-    if Spell("瓦解"):CooldownUp() then
-        -- if MouseOver:Exists() and MouseOver:CanInterrupt() and MouseOver:AffectingCombat() and MouseOver:InRange(5) and MouseOver:CanAttack(Player) then
-        --     return Action:Cast("瓦解mouseover");
-        -- end
         if Focus:Exists() and Focus:CanInterrupt() and Focus:AffectingCombat() and Focus:InRange(5) and Focus:CanAttack(Player) then
             return Action:Cast("瓦解焦点");
         end
