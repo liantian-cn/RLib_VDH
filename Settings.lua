@@ -12,16 +12,16 @@ function Rotation.InitSettings()
     if RLib_VDH_SavedVar == nil then
         RLib_VDH_SavedVar = {}
     end
-    if not RLib_VDH_SavedVar.ReaverGlaiveTargetHp then
+    if RLib_VDH_SavedVar.ReaverGlaiveTargetHp == nil then
         RLib_VDH_SavedVar.ReaverGlaiveTargetHp = 10
     end
-    if not RLib_VDH_SavedVar.BurstTime then
+    if RLib_VDH_SavedVar.BurstTime == nil then
         RLib_VDH_SavedVar.BurstTime = 15
     end
-    if not RLib_VDH_SavedVar.THROW_GLAIVE then
+    if RLib_VDH_SavedVar.THROW_GLAIVE == nil then
         RLib_VDH_SavedVar.THROW_GLAIVE = false
     end
-    if not RLib_VDH_SavedVar.USE_FEL_DEVASTATION then
+    if RLib_VDH_SavedVar.USE_FEL_DEVASTATION == nil then
         RLib_VDH_SavedVar.USE_FEL_DEVASTATION = true
     end
 end
