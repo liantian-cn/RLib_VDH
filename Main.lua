@@ -20,6 +20,5 @@ function Rotation:Check()
 end
 
 function Rotation:Init()
-    Rotation.InitSettings()
     Utils.Print(addonName .. " Inited")
 end

@@ -8,23 +8,22 @@ local category = Settings.RegisterVerticalLayoutCategory("RLib-复仇DH")
 Settings.RegisterAddOnCategory(category)
 
 
-function Rotation.InitSettings()
-    if RLib_VDH_SavedVar == nil then
-        RLib_VDH_SavedVar = {}
-    end
-    if RLib_VDH_SavedVar.ReaverGlaiveTargetHp == nil then
-        RLib_VDH_SavedVar.ReaverGlaiveTargetHp = 10
-    end
-    if RLib_VDH_SavedVar.BurstTime == nil then
-        RLib_VDH_SavedVar.BurstTime = 15
-    end
-    if RLib_VDH_SavedVar.THROW_GLAIVE == nil then
-        RLib_VDH_SavedVar.THROW_GLAIVE = false
-    end
-    if RLib_VDH_SavedVar.USE_FEL_DEVASTATION == nil then
-        RLib_VDH_SavedVar.USE_FEL_DEVASTATION = true
-    end
+if RLib_VDH_SavedVar == nil then
+    RLib_VDH_SavedVar = {}
 end
+if RLib_VDH_SavedVar.ReaverGlaiveTargetHp == nil then
+    RLib_VDH_SavedVar.ReaverGlaiveTargetHp = 10
+end
+if RLib_VDH_SavedVar.BurstTime == nil then
+    RLib_VDH_SavedVar.BurstTime = 15
+end
+if RLib_VDH_SavedVar.THROW_GLAIVE == nil then
+    RLib_VDH_SavedVar.THROW_GLAIVE = false
+end
+if RLib_VDH_SavedVar.USE_FEL_DEVASTATION == nil then
+    RLib_VDH_SavedVar.USE_FEL_DEVASTATION = true
+end
+
 
 do
     local name = "收割者战刃"
